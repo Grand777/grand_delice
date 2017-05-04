@@ -21,7 +21,7 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'shop/img/favicon/apple-touch-icon-114x114.png' %}">
 	<link rel="stylesheet" href="{% static 'shop/css/style.css' %}">
 	<link rel="stylesheet" href="{% static 'shop/css/onlineShop.css' %}">
-
+    <script src="{% static 'shop/js/scripts.min.js' %}"></script>
 <!-- 	<link rel="stylesheet" href="libs/font-awesome/font-awesome.min.css">
  -->
 
@@ -41,18 +41,11 @@
     {% endblock %}
 
 
-				{% block content %}
+    {% block content %}
 
-                {% endblock %}
-
-
-
-
-
-
-
+    {% endblock %}
     <script src="{% static 'shop/js/jquery.min.js' %}"></script>
-<script src="{% static 'shop/js/scripts.min.js' %}"></script>
+
 
 <script src="{% static 'shop/js/catalog.js' %}"></script>
 
