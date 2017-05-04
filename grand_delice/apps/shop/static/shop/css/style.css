@@ -1,0 +1,638 @@
+
+@font-face {
+	font-family: "Exo";
+	src: url("../fonts/Exo/Exo2Regular.eot");
+	src: url("../fonts/Exo/Exo-Regular.ttf");
+	
+}
+
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto/Roboto-Regular.eot");
+	src: url("../fonts/Roboto/Roboto-Regular.ttf");
+	
+}
+
+@font-face{
+	font-family: "DidactGothic";
+	src: url("../fonts/DidactGothic/DidactGothic-Regular.ttf");
+}
+
+
+@font-face{
+	font-family: "OpenSans";
+	src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
+	src: url("../fonts/OpenSans/OpenSans-Regular.eot");
+	src: url("../fonts/OpenSans/OpenSans-Regular.woff2");
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.eot');
+    src: url('../fonts/Roboto/Roboto-Regular.eot#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: "fontAwesome";
+	src: url("../fonts/fontAwesome/fontawesome-webfont.ttf");
+	src: url("../fonts/fontAwesome/fontawesome-webfont.eot");
+}
+
+
+@font-face {
+	font-family: "Exo";
+	src: url("../fonts/Exo/Exo-Regular.ttf");
+	src: url("../fonts/Exo/Exo2Regular.eot");
+
+	
+}
+
+@font-face {
+	font-family: "Pacifico";
+	src: url("../fonts/Pacifico/Pacifico-Regular.ttf");
+	src: url("../fonts/Pacifico/Pacifico.eot");
+
+
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto/Roboto-Regular.eot");
+	src: url("../fonts/Roboto/Roboto-Regular.ttf");
+
+	
+}
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	min-height: 100%;
+	font-family: "OpenSans", sans-serif;
+}
+
+body{
+	font-family: Roboto;
+	color: #fffcf4;
+	opacity: 1;
+}	
+
+* {
+  box-sizing: border-box;	
+}
+
+
+
+.img-responsive{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+
+.cartCount{
+	color: #111;
+}
+
+/*.show{
+	display: block;
+}*/
+
+/*content*/
+
+/*HEADER*/
+
+
+
+.headerWrapper{
+	min-height: 648px;
+	min-width: 100%;
+	box-sizing: border-box;
+	background-color: #111111;
+/*	overflow: hidden;*/
+}
+.header{
+	position: relative;
+	max-width: 1170px;
+	margin: 0 auto;
+	height: inherit;
+	position: relative;
+	background-color: #111111;
+	box-sizing: border-box;
+}
+.header:before{
+	content: "";
+	display: table;
+	clear: both;
+}
+.header:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.header_sidebar{
+	position: fixed;
+	left:0;
+	width: 20%;
+	height: 100%;
+	background-color: #fff;
+	box-sizing: border-box;
+	border-right: 1px solid black;
+}
+
+.header_sidebar .active{
+	background-color: black;
+	color: #fff;
+}
+
+.logo{
+	position: relative;
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	padding: 7% 0;
+
+}
+.logo a{
+	display: block;
+	width: 118px;
+	margin: 0 auto;
+}
+.menu{
+	min-height: 50%;
+	padding-top: 20%;
+}
+.menu ul{
+	word-wrap: break-word;
+	width: 100%;
+	list-style-type: none;
+	text-align: left;
+	text-transform: uppercase;
+	color: black;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	line-height: 16px;
+/*	font-weight: 500;*/
+}
+
+.menu a{
+	padding: 2% 10%;
+	text-decoration: none;
+	color: black;
+	display: block;
+	transition: 0.3s ease;
+}
+
+.menu a:hover{
+	color: #adadad;
+}
+
+.header_social{
+	height: 20%;
+	position: relative;
+}
+
+
+.header_socialText{
+	position: absolute;
+	/*text-align: left;*/
+	transform: rotate(-90deg);
+	left: -27px;
+	bottom: 0;
+	font-size: 12px;
+	color: black;
+}
+
+.social_icons{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	min-height: 10%;
+	margin: 0 auto;
+	text-align: center;
+}
+.icon{
+	display: inline-block;
+	padding-left: 10px;	
+}
+.iconFirst{
+	padding-left: 0;
+}
+
+/*MAIN CONTENT*/
+
+.header_main{
+	position: relative;
+	height: 100%;
+	width: 80%;
+	margin-left: 20%;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.hiddenLogo{
+	display: none;
+	width: 118px;
+	height: 66px;
+	margin: 0 auto;
+	background: url('../img/logoGold.png') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.header_mainText{
+	display: block;
+	max-width: 60%;
+	margin: 0 auto;
+	margin-top: 5%;
+	color: white;
+	font-family: "OpenSans";
+	font-size: 45px;
+	font-weight: 400;
+	letter-spacing: 10px;
+	text-align: center;
+	z-index: 10;
+}
+
+.header_mainImg{
+	display: block;
+	max-width: 35%;
+	min-height: 40%;
+	margin: 0 auto;
+	margin-top: 80px;
+	margin-bottom: 60px;
+	z-index: 2;
+}
+
+.header_mainImg img{
+	display: block;
+	position: relative;
+	width: 100%;
+	z-index: 2;
+	height: auto;
+	 -webkit-transform: rotate(360deg);  
+     -moz-transform: rotate(360deg); 
+      -ms-transform: rotate(360deg);  
+      -o-transform: rotate(360deg);  
+        transform: rotate(360deg);  
+        -moz-animation-name: flower;
+        -moz-animation-duration: 30s;
+        -webkit-animation-name: flower;
+        -webkit-animation-duration: 30s;
+ 
+        -moz-animation-timing-function: linear;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-direction: normal;
+        -moz-animation-delay: 0;
+        -moz-animation-play-state: running;
+        -moz-animation-fill-mode: forwards;
+ 
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: normal;
+        -webkit-animation-delay: 0;
+        -webkit-animation-play-state: running;
+        -webkit-animation-fill-mode: forwards;
+ 
+}
+ 
+@-webkit-keyframes flower {
+    0% {
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes flower {
+    0% {
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+/*hamburger menu*/
+.hiddenMenu{
+	position: fixed;
+	top: 0;
+	right: 0;
+	min-height: 100%;
+	width: 100%;
+	display: none;
+	background: black;
+	z-index: 3;
+	user-select: none;
+}
+.hiddenMenu .cartCount{
+	color: white;
+}
+
+.logoHiddenWrapper{
+	display: none;
+	width: 116px;
+	height: 66px;
+	margin: 0 auto;
+}
+.logoHidden{
+	width: 116px;
+	height: 66px;
+	margin: 0 auto;
+	background: url(../img/logoGold.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+
+.header_main input:checked ~ .hiddenMenu{
+	display: block;
+}
+
+.header_main input:checked ~ .togle_mnu .hamburger2{
+	position: absolute;
+	right: -9999px;
+	transition: all 0.4s;
+}
+.header_main input:checked ~ .togle_mnu .hamburger1{
+	position: relative;
+	transform: rotate(135deg);
+	top: 8px;
+	transition: all 0.4s ease;
+}
+
+.header_main input:checked ~ .togle_mnu .hamburger3{
+	transform: rotate(225deg);
+	transition: all 0.4s ease;
+}
+
+
+.hiddenMenu a{
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.hiddenMenu ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 80%;
+	margin: 0 auto;
+	height: 100%;
+	list-style-type: none;
+	font-family: "OpenSans";
+	font-weight: 500;
+	font-size: 	18px;
+}
+
+.hiddenMenu li{
+	padding: 15px 0;
+}
+
+
+.menuCheckbox{
+	position: fixed;
+	display: none;
+	right: 10px;
+	top: 10px;
+	height: 19px;
+	width: 25px;
+	z-index: 11;
+	cursor: pointer;
+}
+
+.togle_mnu{
+	position: fixed;
+	display: none;
+	right: 10px;
+	top: 10px;
+	z-index: 10;
+}
+
+.hamburger1{
+	height: 3px;
+	width: 25px;
+	background-color: #fff;	
+}
+.hamburger2{
+	height: 3px;
+	width: 25px;
+	margin-top: 5px;
+	background-color: #fff;	
+}
+
+.hamburger3{
+	height: 3px;
+	width: 25px;
+	margin-top: 5px;
+	background-color: #fff;
+}
+
+/*end of hamburger*/
+
+
+/*END OF HEADER*/
+
+
+/*cart*/
+
+.cartItems{
+	color: #111;
+	display: table;
+	margin: 0 auto;
+}
+.cartInfo{
+	display: table;
+	margin: 0 auto;
+}
+.cartInfoItem{
+	display: table-cell;
+
+	width: 125px;
+	height: 60px;
+	/*padding: 10px;*/
+	border: 1px solid black;
+	text-align: center;
+	color: black;
+	vertical-align: middle;
+}
+
+.cartItem{
+	display: block;
+}
+.cartCell{
+	display: table-cell;
+	width: 125px;
+	height: 80px;
+	line-height: 80px;
+	/*padding: 5px;*/
+	border: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+
+}
+.cartCell img{
+	height: 100%;
+	width: 100%;
+	padding: 5px;
+}
+@media only screen and (max-width : 1200px) { 
+/* Стили */ 
+
+
+}
+
+@media only screen and (max-width : 992px) { 
+.social_icons{
+	width: 100%;
+	padding-right: 0;
+	padding-top: 60px;
+}
+
+}
+
+
+@media only screen and (max-width : 768px) { 
+.header{
+	min-height: 100vh;
+}
+
+.header_wrapper{
+	min-height: 100vh;
+}
+
+.hiddenLogo{
+	display: block;
+}
+.logoHiddenWrapper{
+	display: block;
+}
+
+.menu ul{
+	font-size: 14px;
+	line-height: 18px;
+}	
+.menu a{
+	padding: 3% 3%;
+	text-decoration: none;
+	color: black;
+	display: block;
+	transition: 0.3s ease;
+}
+
+.header_sidebar{
+	display: none;
+}
+
+.header_main{
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
+
+.togle_mnu{
+	display: block;
+}
+
+.menuCheckbox{
+	display: block;
+}
+
+/*online shop*/
+
+.modal{
+	justify-content: center;
+}
+.modalWrapper{
+	height: 100vh;
+	
+}
+.modal_img{
+	width: 40%;
+	height: 25%;
+	padding: 0;
+	/*align-self: center;*/
+}
+.modal_info{
+	width: 90%;
+	height: 70%;
+	/*align-self: center;*/
+}
+
+.shopMainText{
+	max-width: 30%;
+}
+
+}
+
+@media only screen and (max-width : 480px) { 
+
+.shopMainText{
+	max-width: 50%;
+}
+
+
+}
+
+
+@media only screen and (max-width : 320px) { 
+
+}
