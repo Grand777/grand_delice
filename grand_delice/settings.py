@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'grand_delice.apps.shop',
     'grand_delice.apps.products',
     'grand_delice.apps.orders',
-    'grand_delice.apps.cart',
 ]
 
 MIDDLEWARE = [

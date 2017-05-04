@@ -21,9 +21,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('grand_delice.apps.shop.urls', namespace='shop')),
-    url(r'^', include('grand_delice.apps.orders.urls', namespace='order')),
+    url(r'^', include('grand_delice.apps.orders.urls', namespace='orders')),
     url(r'^', include('grand_delice.apps.products.urls', namespace='products')),
-    url(r'^cart/', include('grand_delice.apps.cart.urls', namespace='cart')),
 ] \
               + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
               + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
