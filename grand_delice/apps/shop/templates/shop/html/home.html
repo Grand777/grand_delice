@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block home %}
+<header class="headerWrapper">
+	<div class="Header">
+
+		<div class="header_sidebar">
+			<div class="logo">
+				<a href="{% url 'shop:home' %}"><img src="{% static 'shop/img/logo.png' %}" class="img-responsive" alt="Grand Delice"></a>
+			</div>
+
+
+			<nav class="menu">
+					<ul>
+						<a href="{% url 'shop:home' %}" class="sidebarItem"><li>Главная</li></a>
+						<a href="{% url 'shop:online_boutique' %}" class="sidebarItem active"><li>Онлайн Бутик</li></a>
+						<a href="#" class="sidebarItem"><li>Индивидуальная композиция</li></a>
+						<a href="#" class="sidebarItem"><li>Доставка и оплата</li></a>
+						<a href="#" class="sidebarItem"><li>Консьерж</li></a>
+						<a href="#" class="sidebarItem"><li>Корпоративным Клиентам</li></a>
+						<a href="#" class="sidebarItem"><li>Франшиза</li></a>
+						<a href="#" class="sidebarItem"><li>Партнеры</li></a>
+						<a href="#" class="sidebarItem"><li>Контакты</li></a>
+						<a href="{% url 'shop:cart' %}" class="sidebarItem"><li>Корзина <span class="cartCount"> </span></li></a>
+
+					</ul>
+
+			</nav>
+			<div class="header_social">
+				<div class="header_socialText">
+					FOLLOW US
+				</div>
+				<div class="social_icons">
+					<a href="#" class="icon iconFirst"><img src="{% static 'shop/img/facebook.png' %}" alt="icon"></a>
+					<a href="#" class="icon"><img src="{% static 'shop/img/instagram.png' %}" alt="icon"></a>
+					<a href="#" class="icon"><img src="{% static 'shop/img/vk.png' %}" alt="icon"></a>
+				</div>
+			</div>
+		</div>
+		<div class="header_main">
+
+		<!-- 	<a href="index.html" class="logoHiddenWrapper"><div class="logoHidden">
+			</div></a> -->
+
+			<input type="checkbox" id="menu" hidden>
+			<label class="menuCheckbox" for="menu"></label>
+
+			<div class="hiddenMenu">
+					<div class="logoHidden">
+
+					</div>
+
+					<ul>
+						<a href="{% url 'shop:home' %}" class="active"><li>Главная</li></a>
+						<a href="{% url 'shop:online_boutique' %}"><li>Онлайн Бутик</li></a>
+						<a href="#"><li>Индивидуальная композиция</li></a>
+						<a href="#"><li>Доставка и оплата</li></a>
+						<a href="#"><li>Консьерж</li></a>
+						<a href="#"><li>Корпоративным Клиентам</li></a>
+						<a href="#" class="sidebarItem"><li>Франшиза</li></a>
+						<a href="#"><li>Партнеры</li></a>
+						<a href="#"><li>Контакты</li></a>
+						<a href="{% url 'shop:cart' %}" class="sidebarItem"><li>Корзина <span class="cartCount"></span></li></a>
+					</ul>
+			</div>
+
+			<div class="togle_mnu">
+				<div class="hamburger1 menuBlack"></div>
+				<div class="hamburger2 menuBlack"></div>
+				<div class="hamburger3 menuBlack"></div>
+			</div>
+
+             <div class="header_mainText">
+				LUXURY FLOWERS BY GRAND DÉLICE
+			</div>
+			<div class="header_mainImg">
+				<img src="{% static 'shop/img/flower.png' %}" alt="flower">
+			</div>
+
+
+</div>
+	</header>
+
+{% endblock %}
