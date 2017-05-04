@@ -19,6 +19,29 @@ class Status(models.Model):
         verbose_name_plural = 'Статусы заказов'
 
 
+class IndividualOrder(models.Model):
+    customer_email = models.EmailField(blank=True, null=True, default=None)
+    customer_name = models.CharField(max_length=64, blank=True, null=True, default=None)
+    customer_phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$')
+    customer_phone_number = models.CharField(verbose_name='Номер телефона', validators=[customer_phone_regex], blank=True, max_length=15, default=None)
+    comments = models.TextField(blank=True, null=True, default=None)
+    created = models.DateTimeField(verbose_name='Создан', auto_now_add=True)
+    updated = models.DateTimeField(verbose_name='Обновлен', auto_now=True)
+    customer_address = models.CharField(verbose_name='Адрес доставки', max_length=250, blank=True, null=True, default=None)
+    delivery_time = models.DateTimeField(verbose_name='Время и дата доставки', auto_now_add=False,blank=True, null=True, default=None)
+    paid = models.BooleanField(verbose_name='Оплачен', default=False)
+    status = models.ForeignKey(Status)
+    total_price = models.DecimalField(max_digits=10, decimal_places=2, default=0)#total price for all products in order
+
+    def __str__(self):
+        return 'Заказ %s %s %s %s' % (self.id, self.customer_name, self.customer_phone_number, self.status.name)
+
+    class Meta:
+        verbose_name = 'Заказ'
+        verbose_name_plural = 'Заказы'
+
+
+
 class Order(models.Model):
     customer_email = models.EmailField(blank=True, null=True, default=None)
     customer_name = models.CharField(max_length=64, blank=True, null=True, default=None)

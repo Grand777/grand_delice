@@ -4,12 +4,12 @@ from grand_delice.apps.products.models import *
 
 
 def home(request):
-    return render(request, 'home.html', locals())
+    return render(request, 'shop/html/home.html', locals())
 
 
 def online_boutique(request):
     products_images = ProductImage.objects.filter(is_active=True, is_main=True)
-    return render(request, 'products/html/online_boutique.html', locals())
+    return render(request, 'products/html/templates/shop/html/online_boutique.html', locals())
 
 
 def cart(request):
