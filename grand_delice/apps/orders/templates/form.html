@@ -6,9 +6,13 @@
 </head>
 <body>
 
-<form action="{% url 'orders:AddOrder' %}" method="post">{% csrf_token %}
-    <input type="text" name="test">
-    <input type="text" name="test2">
+<form action="{% url 'orders:add_order' %}" method="post">{% csrf_token %}
+    customer_email<input type="text" name="customer_email" title="customer_email">
+    customer_name<input type="text" name="customer_name" title="customer_name">
+    customer_phone_number<input type="text" name="customer_phone_number" title="customer_phone_number">
+    box_size<input type="text" name="box_size" title="box_size">
+    box_color<input type="text" name="box_color" title="box_color">
+    composition_color<input type="text" name="composition_color" title="composition_color">
 
 <button type="submit">отправить</button>
 

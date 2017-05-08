@@ -9,8 +9,13 @@ def home(request):
 
 def online_boutique(request):
     products_images = ProductImage.objects.filter(is_active=True, is_main=True)
-    return render(request, 'products/html/templates/shop/html/online_boutique.html', locals())
+    return render(request, 'shop/html/online_boutique.html', locals())
 
 
 def cart(request):
     return render(request, 'shop/html/cart.html', locals())
+
+
+def composition(request):
+
+    return render(request, 'shop/html/composition.html', locals())
