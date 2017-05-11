@@ -4,6 +4,7 @@ from grand_delice.apps.products.models import *
 
 
 def home(request):
+
     return render(request, 'shop/html/home.html', locals())
 
 
@@ -20,6 +21,12 @@ def composition(request):
 
     return render(request, 'shop/html/composition.html', locals())
 
+
 def discount(request):
 
-    return render(request, 'shop/html')
+    return render(request, 'shop/html/discount.html', locals())
+
+
+def delivery(request):
+
+    return render(request, 'shop/html/delivery.html', locals())

@@ -13,16 +13,17 @@
 
 			<nav class="menu">
 					<ul>
-						<a href="index.html" class="sidebarItem"><li>Главная</li></a>
-						<a href="online_shop.html" class="sidebarItem"><li>Онлайн Бутик</li></a>
-						<a href="composition.html" class="sidebarItem"><li>Индивидуальная композиция</li></a>
-						<a href="delivery.html" class="sidebarItem active"><li>Доставка и оплата</li></a>
-						<a href="discount.html" class="sidebarItem"><li>Акции И Скидки</li></a>
-						<a href="#" class="sidebarItem"><li>Корпоративным Клиентам</li></a>
+<a href="{% url 'shop:home' %}" class="active"><li>Главная</li></a>
+						<a href="{% url 'shop:online_boutique' %}"><li>Онлайн Бутик</li></a>
+						<a href="{% url 'shop:composition' %}"><li>Индивидуальная композиция</li></a>
+						<a href="{% url 'shop:delivery' %}"><li>Доставка и оплата</li></a>
+                        <a href="{% url 'shop:discount' %}" class="sidebarItem"><li>Акции И Скидки</li></a>
+						<a href="#"><li>Консьерж</li></a>
+						<a href="#"><li>Корпоративным Клиентам</li></a>
 						<a href="#" class="sidebarItem"><li>Франшиза</li></a>
-						<a href="#" class="sidebarItem"><li>Партнеры</li></a>
-						<a href="#" class="sidebarItem"><li>Контакты</li></a>
-						<a href="cart.html" class="sidebarItem"><li>Корзина <span class="cartCount"></span></li></a>
+						<a href="#"><li>Партнеры</li></a>
+						<a href="#"><li>Контакты</li></a>
+						<a href="{% url 'shop:cart' %}" class="sidebarItem"><li>Корзина <span class="cartCount"></span></li></a>
 
 					</ul>
 
@@ -52,16 +53,17 @@
 					</div>
 
 					<ul>
-						<a href="index.html" class="active"><li>Главная</li></a>
-						<a href="online_shop.html"><li>Онлайн Бутик</li></a>
-						<a href="composition.html"><li>Индивидуальная композиция</li></a>
-						<a href="#"><li>Доставка и оплата</li></a>
-						<a href="discount.html" class="sidebarItem"><li>Акции И Скидки</li></a>
+			<a href="{% url 'shop:home' %}" class="active"><li>Главная</li></a>
+						<a href="{% url 'shop:online_boutique' %}"><li>Онлайн Бутик</li></a>
+						<a href="{% url 'shop:composition' %}"><li>Индивидуальная композиция</li></a>
+						<a href="{% url 'shop:delivery' %}"><li>Доставка и оплата</li></a>
+                        <a href="{% url 'shop:discount' %}" class="sidebarItem"><li>Акции И Скидки</li></a>
+						<a href="#"><li>Консьерж</li></a>
 						<a href="#"><li>Корпоративным Клиентам</li></a>
 						<a href="#" class="sidebarItem"><li>Франшиза</li></a>
 						<a href="#"><li>Партнеры</li></a>
 						<a href="#"><li>Контакты</li></a>
-						<a href="cart.html" class="sidebarItem"><li>Корзина <span class="cartCount"></span></li></a>
+						<a href="{% url 'shop:cart' %}" class="sidebarItem"><li>Корзина <span class="cartCount"></span></li></a>>
 					</ul>
 			</div>
 			

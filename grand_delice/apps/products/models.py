@@ -23,8 +23,6 @@ class Product(models.Model):
         verbose_name_plural = 'Товары'
 
 
-
-
 class ProductImage(models.Model):
     product = models.ForeignKey(Product, blank=True, null=True, default=None)
     image = models.ImageField(upload_to='media/products_img/')
