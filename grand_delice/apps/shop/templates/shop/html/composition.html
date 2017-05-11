@@ -266,13 +266,17 @@
 						</div>
 					</div>
 
-<form method="POST" class="compositionForm" id="formx" action="javascript:void(null);">
+<form method="POST" class="compositionForm" id="formx" onsubmit="return false">
+{% csrf_token %}
 <!-- <form method="POST" class="compositionForm" id="formx" action="javascript:void(null);" onsubmit="call()"> -->
 
 <input id="name" class="compositionForm_name" name="name" value="" type="text" placeholder="Имя" required>
 <input id="email" class="compositionForm_email" name="email" value="" type="text" placeholder="E-mail" required>
-<input id="Text" class="compositionForm_phone" name="phone" value="" type="text" placeholder="Телефон" required> 
+<input id="phone" class="compositionForm_phone" name="phone" value="" type="text" placeholder="Телефон" required>
+<input id="data" class="compositionForm_data" name="phone" value="" type="text" hidden> 
+
 <input value="Оформить заказ" class="compositionForm_submit compositionForm-js" type="submit">
+
 </form>
 				</div>
 			</div>
