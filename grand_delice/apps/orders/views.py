@@ -12,7 +12,7 @@ from django.forms import ModelForm
 def add_order(request):
     data = request.POST
     data.dict()
-
+    print (data)
     if data:
         # IndividualComposition.objects.create(data.get('customer_name', 'customer_phone_number', 'customer_email'))
         model = IndividualComposition()

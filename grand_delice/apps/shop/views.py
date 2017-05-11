@@ -19,3 +19,7 @@ def cart(request):
 def composition(request):
 
     return render(request, 'shop/html/composition.html', locals())
+
+def discount(request):
+
+    return render(request, 'shop/html')
